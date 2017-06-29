@@ -4,17 +4,21 @@ document.write('n-ne fib - ' + fib(n) + '<br>');
 document.write('n-ne fib2 - ' + fib2(n));
 
 function fib(n){
-if(n == 0) return(n);
-else if(n == 1) 
-return(n);
+ var k =0;
+if(n == 0) return(k);
+else if(n == 1){
+    k +=1;
+    return(k);
+} 
+
 else {
 return(fib(n - 1) + fib(n - 2));
    }
 }
 function fib2(n) {
-    var a = 1;
+    var a = 0;
     var b = 1;
-    for( var i = 3 ; i < n; i++){
+    for( var i = 3; i < n; i++){
         var c = a+b;
         a=b;
         b=c;
