@@ -1,6 +1,6 @@
 var n = Number(prompt(''));
 
-document.write('n-ne fib - ' + fib(n) + <br>);
+document.write('n-ne fib - ' + fib(n) + '<br>');
 document.write('n-ne fib2 - ' + fib2(n));
 
 function fib(n){
